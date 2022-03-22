@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   title: string = 'Person Details';
-  handleAlert() {
-    alert('welcome');
+  handleAlert(msg: string) {
+    alert('welcome' + msg);
   }
   constructor() {}
 

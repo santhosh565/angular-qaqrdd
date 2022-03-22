@@ -59,6 +59,9 @@ export class ProductDetailsComponent implements OnInit {
     );
   }
 
+  handleAlert() {
+    this.footerComp.handleAlert('santhosh');
+  }
   ngAfterViewInit() {
     console.log('viewInit', this.footerTitle);
     this.footerTitle.nativeElement.setAttribute(
@@ -66,7 +69,6 @@ export class ProductDetailsComponent implements OnInit {
       'background-color:' + this.colorName
     );
     console.log(this.footerComp.title);
-    this.footerComp.handleAlert();
   }
 
   ngAfterViewChecked() {
