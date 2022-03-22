@@ -1,0 +1,11 @@
+<ng-content></ng-content>
+
+<ul *ngFor="let item of details; let i = index">
+  <li class="product-data">
+    <label>{{ item }} </label
+    ><button class="delete-btn" (click)="handleClick(i)">Delete</button>
+  </li>
+</ul>
+
+<footer style="color:black" #footerTitle>Happy Learning</footer>
+<app-footer #footerComp></app-footer>
